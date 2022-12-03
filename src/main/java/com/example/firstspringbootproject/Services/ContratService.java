@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class ContratService implements IContratService {
 
-    @Autowired // ou @Inject //pr que spring ioc prendre la tache de creer l'instance
+    @Autowired // ou @Inject //pr que spring ioc prend la tache de creer l'instance
     private ContratRepository CR; //instance du repo
 
     @Override
