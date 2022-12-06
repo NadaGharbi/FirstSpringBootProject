@@ -44,4 +44,9 @@ public class ContratService implements IContratService {
     public Contrat findById(Long id) {
         return CR.findById(id).get();
     }
+
+    @Override
+    public List<Contrat> searchContratByArchive(boolean arch) {
+        return CR.getByArchive(arch);
+    }
 }

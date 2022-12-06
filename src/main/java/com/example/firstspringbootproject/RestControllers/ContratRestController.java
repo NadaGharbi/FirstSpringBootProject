@@ -43,4 +43,9 @@ public class ContratRestController {
     Contrat trouverById(@RequestParam Long id){
         return ics.findById(id);
     }
+
+    @GetMapping("afficherListCbyArch")
+    List<Contrat> trouverAllContractsByArchive(boolean archive){
+        return ics.searchContratByArchive(archive);
+    }
 }

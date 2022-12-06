@@ -9,7 +9,7 @@ import java.util.List;
 
 @Repository
 public interface ContratRepository extends CrudRepository <Contrat,Long> /* nom de l'entité, le type primitif de l'id avc premiere lettre majus*/ {
-  //=select * from Contrat where archive=(valeur qui va etre passée en parametere)
+  //=select * from Contrat where archive=(valeur qui va etre passée en parametre)
     List<Contrat> getByArchive(boolean archive);//doit commencer par get ou find
 
     //=select * from Contrat where archive=(valeur qui va etre passée en parametere) AND dateDebutC=(valeur)
