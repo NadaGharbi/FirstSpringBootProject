@@ -4,9 +4,10 @@ import com.example.firstspringbootproject.DAO.Entities.Contrat;
 import com.example.firstspringbootproject.DAO.Entities.Departement;
 import com.example.firstspringbootproject.DAO.Repositories.DepartementRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class DepartementService implements  IDepartementService{
 
     @Autowired

@@ -3,9 +3,10 @@ package com.example.firstspringbootproject.Services;
 import com.example.firstspringbootproject.DAO.Entities.Etudiant;
 import com.example.firstspringbootproject.DAO.Repositories.EtudiantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class EtudiantService implements IEtudiantService{
     @Autowired
     private EtudiantRepository ETR;

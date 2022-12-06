@@ -3,9 +3,10 @@ package com.example.firstspringbootproject.Services;
 import com.example.firstspringbootproject.DAO.Entities.DetailsEquipe;
 import com.example.firstspringbootproject.DAO.Repositories.DetailsEquipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class DetailsEquipeService implements IDetailsEquipeService{
 
     @Autowired
