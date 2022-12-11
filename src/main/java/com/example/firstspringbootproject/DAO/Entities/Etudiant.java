@@ -22,15 +22,13 @@ public class Etudiant implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+
     long idEtudiant;
 
     @NonNull
-    @Column(name = "prenom")
     String prenomE;
 
     @NonNull
-    @Column(name = "nom")
     String nomE;
 
     @Enumerated(EnumType.STRING)
